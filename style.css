@@ -1,0 +1,280 @@
+body {
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+
+section {
+  box-sizing: border-box;
+  opacity: 1;
+}
+/* ============================= HEADER =============================== */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  color: white;
+  z-index: 50;
+  background-color: #262e2e;
+}
+nav div {
+  position: relative;
+}
+
+a {
+  color: #000000;
+  font-weight: 700;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+/* =========================  HAMBURGER MENU  ======================== */
+
+/* =================================================================== */
+
+/* ======================== HERO/HOME SECTION ======================= */
+
+#hero {
+  background-image: url(assets/hero.JPG);
+  background-size: cover;
+  background-position: 0 center;
+  background-color: #add8e6;
+  height: 100vh;
+  text-align: center;
+}
+
+.company-name {
+  position: absolute;
+  top: 13%;
+  left: 35%;
+  font-size: 64px;
+  transform: scale(1, 1.5);
+  letter-spacing: 6px;
+  font-family: "Luckiest Guy", cursive;
+  color: #ffffff;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+/* ===================== AOBUT SECTION =========================== */
+
+#about {
+  /* box-sizing: border-box; */
+  position: relative;
+  height: 100vh;
+  padding: 60px;
+  background-image: url(assets/carson-skiing.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: #add8e6;
+}
+
+.about-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 80px;
+  right: 5vw;
+  width: 40vw;
+  height: 80vh;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 0 30px;
+  text-align: center;
+  font-size: 26px;
+  line-height: 1.5;
+  overflow-y: scroll;
+}
+
+.about-container::-webkit-scrollbar {
+  display: none;
+}
+
+.about-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.about-h2 {
+  font-size: 3.5vw;
+  font-weight: 900;
+  margin: 30px auto 20px;
+}
+
+/* ====================== GALLERY SECTION ========================== */
+
+#gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  min-height: 100vh;
+  padding: 60px 30px 80px 30px;
+  text-align: center;
+}
+.gallery-h2 {
+  font-weight: 900;
+  font-size: 64px;
+  margin: 40px 0 20px;
+}
+
+.gallery-text {
+  line-height: 1.25;
+}
+
+.gallery-span {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.gallery-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 0 50px;
+}
+
+.gallery-card {
+  width: 300px;
+  margin: 30px;
+}
+
+.gallery-image {
+  width: 100%;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: 900;
+  margin: 5px 0;
+}
+
+#purchase-link {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 300;
+  text-decoration: none;
+  letter-spacing: 1px;
+  background-color: #262e2e;
+  width: 300px;
+  padding: 5px 0;
+}
+
+/* =========================== CONTACT SECTION ====================== */
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 120px);
+  padding: 60px 0 0 0;
+  text-align: center;
+}
+
+.contact-h2 {
+  font-weight: 900;
+  font-size: 64px;
+  margin-bottom: 60px;
+}
+
+#email-link,
+#facebook-link {
+  color: #000000;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.contact-text {
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 2;
+}
+
+#phone-number {
+  text-decoration: none;
+  font-weight: 700;
+  color: #000000;
+}
+
+/* ======================== FOOTER ================================= */
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  height: 60px;
+  z-index: 10;
+}
+
+footer p {
+  display: inline-block;
+  margin: 20px;
+  font-size: 12px;
+}
+
+/* ================================================================== */
+/* ============================ MEDIA QUERIES ======================= */
+/* ================================================================== */
+
+@media only screen and (max-width: 600px) {
+  #hero {
+    background-position: -6vh center;
+  }
+
+  .contact-h2 {
+    font-size: 54px;
+  }
+
+  #about {
+    background-position: 37% 0;
+  }
+
+  .about-container {
+    border-radius: 10px;
+  }
+
+  .about-h2 {
+    font-size: 32px;
+    line-height: 1.1;
+  }
+
+  .about-text {
+    font-size: 18px;
+  }
+
+  .gallery-text {
+    font-size: 14px;
+  }
+
+  .gallery-span {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  #hero {
+    height: 110vh;
+  }
+
+  .company-name {
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin: 80px 0;
+    font-size: 8vw;
+  }
+} ;

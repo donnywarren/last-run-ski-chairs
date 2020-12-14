@@ -226,7 +226,7 @@ footer {
 }
 
 footer p,
-footer a {
+#author-link {
   display: inline-block;
   margin: 20px;
   font-size: 12px;
@@ -234,11 +234,11 @@ footer a {
   font-weight: initial;
   text-decoration: none;
 }
-.authors-name {
+.author-name {
   white-space: nowrap;
 }
 
-footer a:hover {
+#author-link:hover {
   color: #ffd700;
 }
 

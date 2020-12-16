@@ -26,9 +26,6 @@ nav {
   z-index: 50;
   background-color: #262e2e;
 }
-nav div {
-  position: relative;
-}
 
 a {
   color: #000000;
